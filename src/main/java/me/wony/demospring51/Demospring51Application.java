@@ -13,13 +13,6 @@ public class Demospring51Application {
         SpringApplication.run(Demospring51Application.class,args);
     }
 
-    @Bean
-    public MessageSource messageSource(){
-        MessageSource messageSource  = new ReloadableResourceBundleMessageSource();
-        ((ReloadableResourceBundleMessageSource) messageSource).setBasename("classpath:/messages");
-        ((ReloadableResourceBundleMessageSource) messageSource).setDefaultEncoding("UTF-8");
-        ((ReloadableResourceBundleMessageSource) messageSource).setCacheSeconds(3);
-        return messageSource;
-    }
+
 
 }
